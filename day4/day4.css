@@ -1,0 +1,141 @@
+*{box-sizing: border-box;}
+.name{background-color: blueviolet;}
+.landscape{width: 500px;}
+/* section for landscape */
+.container{
+    background-color: cyan;
+    padding-top: 2em;
+}
+.title{
+    border: 5px; 
+    text-align: center; 
+    background-color: gold; 
+    padding: 1em; 
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 8px black;
+    margin-bottom: 2em;
+}
+.image1, .image2, .image3, .image4{
+    width: 45%;
+}
+.image1{
+    border-radius: 20px;
+    margin-right: 5%;
+}
+.image2{
+    border-radius: 50%;
+}
+.image3{
+    border: ridge 10px brown;
+    padding: 1em;
+}
+.image4{
+    box-shadow: 0px 0px 20px 10px red;
+    margin-left: 5%;
+    border-radius: 15px;
+}
+.QCCLink{
+    background-color: goldenrod;
+    color: crimson;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+.QCCLink:hover{
+    background-color: blueviolet;
+    color: whitesmoke;
+    box-shadow: 0px 0px 15px 5px grey;
+}
+/* navigatin tabs */
+.link{
+    text-decoration: none;
+    background-color: lawngreen;
+    display: block;
+    border: solid 1px;
+    text-align: center;
+    padding: 1rem;
+    width: 50%;
+    color: black;
+}
+.vertical{list-style-type: none;}
+.link:hover{
+    background-color: crimson;
+    color: bisque;
+    border: solid 1px;
+}
+.horizontal{
+    background-color: aquamarine;
+    text-align: center;
+
+}
+.zelda{
+    color: red;
+    display: inline-block;
+    padding: 1em 2em;
+}
+.zelda:hover{
+    background-color: darkorchid;
+    color: whitesmoke;
+    text-decoration: none;
+}
+/* positions */
+.pos{
+    border: ridge 5px greenyellow;
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+.positionImg{
+    width: 100%;
+    display: block;
+}
+.paragraph{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    background-color: rgb(141, 27, 27);
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+    color: white;
+}
+.paragraph:hover{
+    background-color: gold;
+    color: red;
+    box-shadow: 0px 0px 10px 5px darkgrey;
+}
+.sticky{
+    background-color: greenyellow;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+}
+.zcontainer{
+    position: relative;
+    border: outset 10px tomato;
+}
+.zimage1{width: 100%; position: absolute; z-index: 0;}
+.Zimage2{width: 60%; position: absolute; z-index: 1;}
+.zparagraph{font-size: 5em; position: absolute; z-index: 2;}
+/* filter images */
+.blur1, .blur2, .blur3, .sepia1, .sepia2, .sepia3, .invert1, .invert2, .invert3{
+    width: 30%;
+    margin-left: 2%;
+}
+.blur1{filter: blur(1px);}
+.blur2{filter: blur(10px);}
+.blur3{filter: 20px;}
+.sepia1{filter: sepia(10%);}
+.sepia2{filter: sepia(60%);}
+.sepia3{filter: sepia(100%);}
+.invert1{filter: invert(20%);}
+.invert2{filter: invert(60%);}
+.invert3{filter: invert(100%);}
