@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5 - Nick Israel</title>
+</head>
+<body>
+    <h1>Nick Israel</h1>
+    <!-- JAVASCRIPT -->
+    <script>
+        let fullName = prompt('Please enter program name: ');
+        let luckyNumber = prompt('Please enter lucky number: ');
+        console.log('Welcome to the program ' + fullName + '. Your lucky number is ' + luckyNumber + '.');
+        console.log(`Good morning ${fullName}. Your entered number is ${luckyNumber}.`);
+
+        console.log('The second letter of the word is: ' + fullName[1]);
+        console.log('The length of word ' + fullName + ' is ' + fullName.length);
+        let allUpperCase = fullName.toUpperCase();
+        console.log(allUpperCase);
+
+        let extractCharacter = fullName.slice(-2);
+        console.log(`The last two characters of the word ${fullName} is ${extractCharacter}`)
+
+        let array;
+        array = ['anything', 'trauma', 'hard', 'freedom', 'meat'];
+        console.log('Mixed array with initial values: ' + array);
+
+        let animal = prompt('Please enter an ANIMAL: ');
+        array.push(animal);
+        console.log('Mixed array with an new animal added to the end: ' + array);
+
+        let negative = prompt('Please enter a NEGATIVE NUMBER: ');
+        array.unshift(negative);
+        console.log('Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array ' + array);
+
+        // create copy of array and reverse copy of array
+
+        let copyArray = array.slice();
+        let reversed = copyArray.reverse();
+        console.log('Mixed array '+ array + ' and reverse of copy array: ' + reversed);
+
+
+    </script>
+</body>
+</html>

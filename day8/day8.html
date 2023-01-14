@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Nick Israel</title>
+</head>
+<body>
+    <h1>Nick Israel</h1>
+    <!-- JAVASCRIPT -->
+    <script>
+        let firstName; lastName = "Israel";
+        let x = 100; y = -1.5; z = 7;
+        let boolean1 = true; boolean2 = false;
+        let name = null;
+
+        firstName = "Nick";
+
+        console.log('Hello there!');
+        console.log(firstName, y);
+        console.log('First name =', firstName);
+        console.log(firstName + ' is my first name');
+        console.log(`$(firstName) is my first name`);
+
+        let fullName = prompt('Please enter a name: ');
+
+        let num1 = parseInt (prompt('Enter number 1: '));
+        let num2 = prompt('Enter number 2: ');
+        num2 = parseInt(num2);
+
+        let sum = num1 + num2;
+        let allUpperCase = fullName.toUpperCase();
+        console.log(allUpperCase);
+
+        let myString = "Queensborough Community College";
+        console.log(myString);
+        let stringLocation = myString.search('Col');
+        console.log(`The index location for Co is: ${stringLocation}`);
+
+        //  removie white space in a string
+        let name1 = '      William     Smith';
+        // substracting characters
+        let subWord = myString.substr(6,7);
+        console.log(subWord);
+        //  first find the position of the word and then substract 5 characters from the word
+        let findFirst = myString.search('Com');
+        let subSec = myString.substr(findFirst,5);
+        console.log(`The substracted characters are ${subSec}`);
+
+        // extract characters from a string
+        let extractCharacter = myString.slice(6.10);
+        console.log(`The extracted characters are ${extractCharacter}`);
+
+        // ARRAYS
+        let fruits;
+        fruits = ["apples", 'oranges', 'grapes', 'h'];
+
+        let cars = ['BMW', 'GMC', 'Mercedez', 'Hyundai'];
+        let mixedItems = [65,true,'cats'];
+
+        console.log(cars);
+        console.log(mixedItems);
+        console.log(`The second item in array fruits is: ${fruits[1]}`);
+
+        let countries = ['Canada', 'USA', ['Columbia', 'Peru']];
+        console.log(countries);
+        console.log(countries[2][1]);
+
+        // create a copy of an ARRAY
+        let newItems = mixedItems;
+        let newItemsSlice = mixedItems.slice();
+
+        
+
+        // ACTIVITY 5
+        console.log('Activity5.1');
+
+    </script>
+</body>
+</html>
