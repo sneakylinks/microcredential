@@ -1,0 +1,94 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+.float_container{
+    background-color: coral;
+    border: solid blue;
+    display: inline-block;
+    width: 100%;
+}
+.div1, .div2, .div3{
+    width: 30%;
+    height: 100px;
+    float: left;
+ }
+ .div1{background-color: chocolate;}
+ .div2{background-color: blueviolet;}
+ .div3{background-color: darkgreen;}
+ /* FLEX CONTAINER */
+ .flex_container{
+    background-color: aliceblue;
+    border: solid salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .divFlex1, .divFlex2, .divFlex3{
+    width: 100px;
+    height: 100px;
+ }
+ .divFlex1{background-color: olive;}
+ .divFlex2{background-color: tomato;}
+ .divFlex3{background-color: indigo;}
+ /* TEMPLATE INTRO IMAGE */
+ .container{
+   position: relative;
+ }
+ .introImage{width: 100%;}
+ .author{
+   position: absolute;
+   top: 5%;
+   left: 20%;
+   right: 20%;
+   text-align: center;
+   font-size: 200%;
+ }
+ .intro{
+   position: absolute;
+   top: 15%;
+   left: 20%;
+   right: 20%;
+   text-align: center;
+   font-size: 1.3em;
+   font-style: italic;
+   color: greenyellow;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+.navTabs{
+   position: absolute;
+   width: 100%;
+   bottom: 5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.nav{
+   display: inline-block;
+   padding: 1em;
+   width: 30%;
+   background-color: tomato;
+   text-align: center;
+   font-size: 1.2em;
+   border-radius: 10px;
+   transition: 500ms;
+
+}
+.nav:hover{
+   background-color: red;
+   box-shadow: 0px 0px 5px 1px whitesmoke;
+}
+/* MEDIUM SCREEN */
+@media only screen and (max-width: 1000px){
+   body{background-color: chartreuse;}
+   .author{text-align: left; left: 5%; font-size: 2.5em;}
+   .intro{top: 10%; left: 30%; right: 40%;}
+   .navTabs{bottom: 5%;}
+   .nav{width: 20%; padding: 0.5em; font-size: 0.9em;}
+}
+/* SMALL SCREEN */
+@media only screen and (max-width: 449px) {
+   body{background-color: darkorange;}
+   .intro{display: none;}
+   .author{top: 5%; font-size: 1.5em;}
+   .navTabs{bottom: 5%;}
+   .nav{width: 33%; padding: 0.2em; font-size: 0.8em; border-radius: 0%;}
+}
