@@ -1,0 +1,28 @@
+.sticky{
+    background-color: rgba(224, 22, 15, 0.911);
+    padding: 1em;
+    text-align: center;
+    flex: 1 1 auto;
+    position: sticky;
+    width: 100%;
+    bottom: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sticky:hover{
+    text-transform: uppercase;
+    animation-name: flash;
+    animation-duration: 6s;
+    animation-iteration-count: 4;
+}
+@keyframes flash {
+    from{color: black;}
+    to{color: floralwhite;}
+}
+.main2:hover{
+    box-shadow: 0px 0px 15px 5px whitesmoke;
+}
+.head{
+    font-family: lobster, serif;
+    font-size: 5em
+    
+}
